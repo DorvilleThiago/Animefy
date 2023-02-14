@@ -1,0 +1,8 @@
+.main{
+ background: linear-gradient(to right, #ff3737, #ff8000);
+ height: 65px;
+ width: 100%;
+ position: fixed;
+ z-index: 1;
+ bottom: 0px;
+}

@@ -1,0 +1,45 @@
+.main {
+    width: 245px;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.menu1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11px;
+}
+
+.menu2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.menu3 {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#language {
+    margin-bottom: 100px;
+}
+
+#language a {
+    will-change: transform;
+}
+
+#language a:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
