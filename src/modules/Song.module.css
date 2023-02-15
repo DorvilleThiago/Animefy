@@ -1,0 +1,23 @@
+.main {
+    background-color: rgba(255, 255, 255, 0.032);
+    height: 300px;
+    width: 180px;
+    border-radius: 10px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    background: linear-gradient(purple, lightblue);
+    min-height: 180px;
+    min-width: 180px;
+}
+
+.title {
+    font-size: 17px;
+}
+
+.desc {
+    font-size: 15px;
+}
