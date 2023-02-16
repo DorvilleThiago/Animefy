@@ -5,6 +5,7 @@
     position: fixed;
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 .title {
@@ -39,7 +40,11 @@
     will-change: transform;
 }
 
-#language a:hover{
+#language a:hover{ 
     transform: scale(1.02);
     cursor: pointer;
+}
+
+.redes :hover{
+    color: white;
 }

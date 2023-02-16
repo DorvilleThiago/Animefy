@@ -108,10 +108,14 @@ export default function LeftBar() {
             </span>
         </div>
         <div className={styles.menu3}>
-          <span style={{display: 'flex', gap: '10px',marginBottom: '10px'}}>
-            <a style={{color: 'grey'}}>Github</a>
-            <a style={{color: 'grey'}}>Linkedin</a>
-            <a style={{color: 'grey'}}>Instagram</a>
+          <span className={styles.redes} style={{
+            display: 'flex', gap: '10px',
+            marginBottom: '10px', color: 'grey', transition: 'all 0.3s',
+            cursor: 'pointer'
+          }}>
+            <a>Github</a>
+            <a>Linkedin</a>
+            <a>Instagram</a>
           </span>
             <span id={styles.language}>
               <a style={{

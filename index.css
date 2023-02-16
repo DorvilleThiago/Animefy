@@ -13,10 +13,38 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@keyframes slide {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color: #1D1D1D;
-  height: 150vh;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#linha {
+  animation: slide 0.8s ease 0s normal forwards;
+}
+
+#linha div{
+  transition: all 0.2s;
+}
+#linha div:hover{
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#title {
+  animation: slide 0.8s ease 0s normal forwards;
+  cursor: default;
 }

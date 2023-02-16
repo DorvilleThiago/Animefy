@@ -4,7 +4,7 @@ export default function TopBar() {
     return (
       <div className={styles.main}>
         <p style={{marginRight: '50px', fontSize: '17px', letterSpacing: '1px'}}>Deixe a chama do seu coração incendiar !</p>
-        <p style={{marginRight: '50px'}}>|</p>
+        <span style={{marginRight: '50px',width: 1, height: 27,backgroundColor: 'white'}}></span>
         <a id={styles.port}>Ir para portfólio</a>
       </div>  
     );
