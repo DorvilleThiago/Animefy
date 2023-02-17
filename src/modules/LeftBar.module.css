@@ -12,18 +12,40 @@
     height: 80px;
     display: flex;
     align-items: center;
+    cursor: default;
 }
 
 .menu1 {
     display: flex;
     flex-direction: column;
     margin-top: 11px;
+    color: #B2B2B2;
+}
+
+#item {
+    transition: all 0.3s;
+}
+
+#item:hover{
+    color: white;
+    cursor: pointer;
 }
 
 .menu2 {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+#item2 {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#item2:hover {
+    opacity: 1
+}
+
 .menu3 {
     width: 100%;
     margin-top: auto;
@@ -45,6 +67,18 @@
     cursor: pointer;
 }
 
-.redes :hover{
+.redes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: grey;
+    cursor: pointer;
+}
+
+.redes a{
+    transition: all 0.3s;
+}
+
+.redes a:hover{
     color: white;
 }

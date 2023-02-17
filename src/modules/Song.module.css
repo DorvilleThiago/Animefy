@@ -14,7 +14,7 @@
 }
 
 .img {
-    background: linear-gradient(purple, lightblue);
+    object-fit: cover;
     min-height: 175px;
     width: 175px;
     border-radius: 9px;
