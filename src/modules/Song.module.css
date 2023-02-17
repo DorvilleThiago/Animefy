@@ -46,3 +46,12 @@
     background: linear-gradient(to right, #ff3737, #ff8000);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.407)
 }
+
+@media screen and (max-width: 767px) {
+    .main {
+      
+        height: 250px;
+        width: 175px;
+        margin-right: 0px;
+    }
+}

@@ -68,7 +68,7 @@ export default function BottomBar() {
             <FontAwesomeIcon ref={play} id={styles.icon} icon={faPlay} />
             <FontAwesomeIcon ref={pause} id={styles.icon} icon={faPause} />
         </button>
-        <p>{formatTime(Math.ceil(currentTime))}</p>
+        <p id={styles.timer}>{formatTime(Math.ceil(currentTime))}</p>
         <input 
         id={styles.tempo}
         type="range"
@@ -77,7 +77,7 @@ export default function BottomBar() {
         value={currentTime}
         onChange={handleTimeChange}
         />
-        <p>{formatTime(Math.ceil(duration))}</p>
+        <p id={styles.timer}>{formatTime(Math.ceil(duration))}</p>
         <input
         id={styles.volume}
         type="range"

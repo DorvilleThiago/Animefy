@@ -1,4 +1,4 @@
-import { useState, createContext, createRef, useRef } from 'react'
+import { useState, createContext, createRef, useRef, useEffect } from 'react'
 
 import React from 'react'
 import '/index.css'
@@ -15,13 +15,29 @@ function App() {
   const [theone, setTheOne] = useState('nenhuma');
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
-  
+  const [mostrar, setMostrar] = useState(true);
+
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 767) { 
+        console.log('olá')
+      } else {
+        console.log('chau')
+      }
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   
   return (
     <Tocando.Provider value={{tocando, setTocando, theone, setTheOne, duration, setDuration, currentTime, setCurrentTime}}>
     <div >
-    <TopBar />
     <BottomBar />
+    <TopBar />
     <LeftBar />
     <h1 id ='title' style={{fontSize: 23,position: 'absolute', left: 275,top: 70, zIndex: -1}}>Épico</h1>
     <span id ='linha' style={{
