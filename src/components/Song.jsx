@@ -124,6 +124,54 @@ export default function Song(props) {
              setTheOne('melissa')
              setDuration(lista.melissa.duration);
             lista.melissa.play();
+         } else if (song == 'unravel') {
+            if (tocando) {
+                for (let item in lista) {
+                    lista[item].pause();
+                    lista[item].currentTime = 0;
+                }
+             }
+             setCurrentTime(0)
+             setTocando(true);
+             setTheOne('unravel')
+             setDuration(lista.unravel.duration);
+            lista.unravel.play();
+         } else if (song == 'barricades') {
+            if (tocando) {
+                for (let item in lista) {
+                    lista[item].pause();
+                    lista[item].currentTime = 0;
+                }
+             }
+             setCurrentTime(0)
+             setTocando(true);
+             setTheOne('barricades')
+             setDuration(lista.barricades.duration);
+            lista.barricades.play();
+         } else if (song == 'again') {
+            if (tocando) {
+                for (let item in lista) {
+                    lista[item].pause();
+                    lista[item].currentTime = 0;
+                }
+             }
+             setCurrentTime(0)
+             setTocando(true);
+             setTheOne('again')
+             setDuration(lista.again.duration);
+            lista.again.play();
+         } else if (song == 'believeme') {
+            if (tocando) {
+                for (let item in lista) {
+                    lista[item].pause();
+                    lista[item].currentTime = 0;
+                }
+             }
+             setCurrentTime(0)
+             setTocando(true);
+             setTheOne('believeme')
+             setDuration(lista.believeme.duration);
+            lista.believeme.play();
          }
        
         };

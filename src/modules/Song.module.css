@@ -1,11 +1,11 @@
 .main {
     flex-shrink: 0;
     float: left;
-    height: 250px;
+    height: 255px;
     width: 175px;
     border-radius: 10px;
     padding: 15px;
-    padding-bottom: 25px;
+    margin-bottom: 10px;
     display: flex;
     flex-flow: column;
     flex-direction: column;
@@ -15,7 +15,7 @@
 
 .img {
     object-fit: cover;
-    min-height: 175px;
+    height: 175px;
     width: 175px;
     border-radius: 9px;
 }
@@ -53,5 +53,22 @@
         height: 250px;
         width: 175px;
         margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .main {
+        width: 35%;
+        margin-right: 2.3%;
+        margin-left: 2.3%;
+    }
+    .img {
+        width: 100%;
+    }
+    .desc {
+        font-size: 10px;
+    }
+    .play {
+        margin-left: 19%;
     }
 }

@@ -48,36 +48,7 @@ export default function LeftBar() {
             }} icon={faHouse} />
             <h3 style={{ fontSize: '15px', marginLeft: '12px', color:'white'}}>Inicio</h3>
           </span>
-          <span id={styles.item} 
-            style={{
-            display: 'flex',
-            alignItems: 'center',
-            height: '40px'
-          }}>
-            <FontAwesomeIcon style={{
-              marginLeft: '26px',
-              height: '26px',
-              width: '26px'
-            }} icon={faMagnifyingGlass} />
-            <h3 style={{ fontSize: '15px', marginLeft: '12px'}}>Pesquisar</h3>
-          </span>
-          <span id={styles.item} style={{
-            display: 'flex',
-            alignItems: 'center',
-            height: '40px'
-          }}>
-            <FontAwesomeIcon style={{
-              marginLeft: '26px',
-              height: '26px',
-              width: '26px'
-            }} icon={faBookAtlas} />
-            <h3 style={{ fontSize: '15px', marginLeft: '12px'}}>n sei</h3>
-          </span>
-        </div>
-        <div>
           
-
-
 
 
         </div>

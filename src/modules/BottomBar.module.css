@@ -160,3 +160,9 @@
   #tempo:focus::-ms-fill-upper {
     background: #FFF5F5;
   }
+
+    @media screen and (max-width: 767px) {
+      .main {
+        transform: translateX(-5px);
+      }
+  }
